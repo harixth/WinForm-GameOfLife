@@ -21,7 +21,7 @@ namespace GameOfLife
 
         public GameUI()
         {
-            InitializeComponent();
+            InitializeComponent();            
             engine = new Engine(cellNumber, cellNumber);
         }
 
@@ -107,7 +107,15 @@ namespace GameOfLife
 
         private void picbxHelp_Click(object sender, EventArgs e)
         {
+            gbGameInst.Visible = true;
+            btnStart.Visible = true;
+        }
 
+        private void btnStart_Click(object sender, EventArgs e)
+        {
+            gbGameInst.Visible = false;
+            btnStart.Visible = false;
+            btnReset_Click(sender, e);
         }
     }   
 }

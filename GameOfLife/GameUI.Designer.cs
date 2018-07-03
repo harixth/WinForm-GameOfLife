@@ -34,6 +34,8 @@ namespace GameOfLife
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GameUI));
             this.timer = new System.Windows.Forms.Timer(this.components);
             this.MainFrame = new System.Windows.Forms.GroupBox();
+            this.gbGameInst = new System.Windows.Forms.GroupBox();
+            this.btnStart = new System.Windows.Forms.Button();
             this.picbxHelp = new System.Windows.Forms.PictureBox();
             this.lblCount = new System.Windows.Forms.Label();
             this.picbxGenTxt = new System.Windows.Forms.PictureBox();
@@ -44,6 +46,7 @@ namespace GameOfLife
             this.btnPlay = new System.Windows.Forms.Button();
             this.btnReset = new System.Windows.Forms.Button();
             this.MainFrame.SuspendLayout();
+            this.gbGameInst.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picbxHelp)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picbxGenTxt)).BeginInit();
             this.SuspendLayout();
@@ -58,6 +61,7 @@ namespace GameOfLife
             this.MainFrame.BackColor = System.Drawing.Color.Transparent;
             this.MainFrame.BackgroundImage = global::GameOfLife.Properties.Resources._73620_OE55YI_193;
             this.MainFrame.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.MainFrame.Controls.Add(this.gbGameInst);
             this.MainFrame.Controls.Add(this.picbxHelp);
             this.MainFrame.Controls.Add(this.lblCount);
             this.MainFrame.Controls.Add(this.picbxGenTxt);
@@ -74,6 +78,33 @@ namespace GameOfLife
             this.MainFrame.Size = new System.Drawing.Size(1180, 990);
             this.MainFrame.TabIndex = 7;
             this.MainFrame.TabStop = false;
+            // 
+            // gbGameInst
+            // 
+            this.gbGameInst.BackgroundImage = global::GameOfLife.Properties.Resources.GameInstruction;
+            this.gbGameInst.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.gbGameInst.Controls.Add(this.btnStart);
+            this.gbGameInst.Location = new System.Drawing.Point(296, 48);
+            this.gbGameInst.Name = "gbGameInst";
+            this.gbGameInst.Size = new System.Drawing.Size(523, 369);
+            this.gbGameInst.TabIndex = 0;
+            this.gbGameInst.TabStop = false;
+            // 
+            // btnStart
+            // 
+            this.btnStart.BackColor = System.Drawing.Color.Transparent;
+            this.btnStart.BackgroundImage = global::GameOfLife.Properties.Resources.start;
+            this.btnStart.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnStart.FlatAppearance.BorderSize = 0;
+            this.btnStart.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnStart.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnStart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnStart.Location = new System.Drawing.Point(208, 287);
+            this.btnStart.Name = "btnStart";
+            this.btnStart.Size = new System.Drawing.Size(112, 44);
+            this.btnStart.TabIndex = 10;
+            this.btnStart.UseVisualStyleBackColor = false;
+            this.btnStart.Click += new System.EventHandler(this.btnStart_Click);
             // 
             // picbxHelp
             // 
@@ -188,7 +219,7 @@ namespace GameOfLife
             this.btnReset.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnReset.FlatAppearance.BorderSize = 0;
             this.btnReset.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnReset.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke;
+            this.btnReset.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnReset.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnReset.Location = new System.Drawing.Point(296, 659);
             this.btnReset.Margin = new System.Windows.Forms.Padding(4);
@@ -218,6 +249,7 @@ namespace GameOfLife
             this.Load += new System.EventHandler(this.GameUI_Load);
             this.MainFrame.ResumeLayout(false);
             this.MainFrame.PerformLayout();
+            this.gbGameInst.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.picbxHelp)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picbxGenTxt)).EndInit();
             this.ResumeLayout(false);
@@ -236,6 +268,8 @@ namespace GameOfLife
         private System.Windows.Forms.Label lblCount;
         private System.Windows.Forms.Label lblGenTxt;
         private System.Windows.Forms.PictureBox picbxHelp;
+        private System.Windows.Forms.GroupBox gbGameInst;
+        private System.Windows.Forms.Button btnStart;
     }
 }
 

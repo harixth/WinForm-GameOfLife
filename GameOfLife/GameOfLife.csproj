@@ -96,22 +96,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\PlayButton.bmp" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\play-button %282%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\play-button %282%291.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\play-button.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\stop-button.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\reset.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\plus-sign.png" />
@@ -127,12 +115,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\BlankStar-24x.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Gof-Bg.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Gof-Bg1.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\73620-OE55YI-193.jpg" />
@@ -166,6 +148,18 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HelpUI-Bg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Instruction.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GameInstruction.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\start.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
